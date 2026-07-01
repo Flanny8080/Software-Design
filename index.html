@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RightOnPar LLC — Our Products</title>
+<meta name="description" content="RightOnPar LLC builds web apps and AI tools. Explore our products: a web app, two companion sites, and an AI assistant for phone calls.">
+<meta name="keywords" content="RightOnPar, RightOnPar LLC, web app, AI phone assistant, AI assistant for calls">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.rightonpar.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="RightOnPar LLC — Our Products">
+<meta property="og:description" content="A web app, two companion sites, and an AI assistant for phone calls — all built by RightOnPar LLC.">
+<meta property="og:url" content="https://www.rightonpar.com/">
+<meta property="og:image" content="https://www.rightonpar.com/og-image.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RightOnPar LLC — Our Products">
+<meta name="twitter:description" content="A web app, two companion sites, and an AI assistant for phone calls — all built by RightOnPar LLC.">
+
+<!-- Structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RightOnPar LLC",
+  "url": "https://www.rightonpar.com/",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --fairway-deep: #16301F;
+    --fairway: #2E5B3C;
+    --fairway-bright: #3D7A4F;
+    --cream: #F6F1E6;
+    --cream-dim: #EEE7D6;
+    --sand: #C9A24B;
+    --ink: #1A1B16;
+    --ink-soft: #4A4C42;
+    --white: #FEFDF9;
+
+    --display: 'Fraunces', serif;
+    --body: 'Inter', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--fairway-bright);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(246, 241, 230, 0.88);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(26, 27, 22, 0.08);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 28px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--fairway-deep);
+  }
+
+  .logo span { color: var(--sand); }
+
+  nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  nav a {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover { color: var(--fairway-deep); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    padding: 110px 0 90px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(61,122,79,0.16) 0%, rgba(61,122,79,0) 70%);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fairway-bright);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: var(--sand);
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    color: var(--fairway-deep);
+    max-width: 820px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--sand);
+  }
+
+  .hero p {
+    margin-top: 26px;
+    max-width: 540px;
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-actions {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 24px;
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 14.5px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btn-primary {
+    background: var(--fairway-deep);
+    color: var(--cream);
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(22,48,31,0.25); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--fairway-deep);
+    border: 1px solid rgba(22,48,31,0.3);
+  }
+
+  .btn-ghost:hover { border-color: var(--fairway-deep); }
+
+  /* ---------- Scorecard section ---------- */
+  .scorecard-section {
+    padding: 40px 0 110px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 18px;
+  }
+
+  .section-head h2 {
+    font-family: var(--display);
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--fairway-deep);
+  }
+
+  .section-head .tag {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+  }
+
+  .scorecard {
+    border: 1px solid rgba(26,27,22,0.14);
+    background: var(--white);
+  }
+
+  .hole {
+    display: grid;
+    grid-template-columns: 64px 1fr auto;
+    gap: 24px;
+    align-items: center;
+    padding: 28px;
+    border-bottom: 1px solid rgba(26,27,22,0.1);
+    transition: background 0.2s ease;
+  }
+
+  .hole:last-child { border-bottom: none; }
+
+  .hole:hover { background: var(--cream-dim); }
+
+  .hole-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--sand);
+    border: 1px solid var(--sand);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .hole-body h3 {
+    font-family: var(--display);
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .hole-body p {
+    color: var(--ink-soft);
+    font-size: 0.97rem;
+    max-width: 460px;
+  }
+
+  .hole-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .status-chip {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fairway);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .status-chip::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--fairway-bright);
+  }
+
+  .hole-link {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 13.5px;
+    text-decoration: none;
+    color: var(--fairway-deep);
+    border-bottom: 1px solid var(--sand);
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+
+  .hole-link:hover { color: var(--sand); }
+
+  @media (max-width: 640px) {
+    .hole { grid-template-columns: 44px 1fr; }
+    .hole-meta { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; margin-top: 4px; }
+  }
+
+  /* ---------- About strip ---------- */
+  .about {
+    background: var(--fairway-deep);
+    color: var(--cream);
+    padding: 70px 0;
+  }
+
+  .about .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+  }
+
+  .about h2 {
+    font-family: var(--display);
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    font-weight: 500;
+  }
+
+  .about p {
+    color: rgba(246,241,230,0.78);
+    font-size: 1rem;
+  }
+
+  @media (max-width: 720px) {
+    .about .wrap { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Contact / Footer ---------- */
+  footer {
+    padding: 70px 0 40px;
+  }
+
+  .contact-block h2 {
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    color: var(--fairway-deep);
+    max-width: 600px;
+  }
+
+  .contact-block p {
+    margin-top: 16px;
+    color: var(--ink-soft);
+    max-width: 480px;
+  }
+
+  .contact-actions {
+    margin-top: 30px;
+  }
+
+  .foot-bottom {
+    margin-top: 70px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(26,27,22,0.14);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#top" class="logo">RIGHT<span>ON</span>PAR</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">RightOnPar LLC</p>
+      <h1>Four projects. <em>Every one</em> on par.</h1>
+      <p>We build web apps and AI tools that do exactly what they say they'll do. Below is everything we've shipped so far — take a swing through any of it.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">See the lineup</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="scorecard-section" id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The lineup</h2>
+        <span class="tag">4 holes · all live</span>
+      </div>
+
+      <div class="scorecard">
+
+        <!-- EDIT ME: replace name, description, and href for each product below -->
+        <div class="hole">
+          <div class="hole-num">01</div>
+          <div class="hole-body">
+            <h3>[Web App Name]</h3>
+            <p>[One or two sentences on what this web app does and who it's for.]</p>
+          </div>
+          <div class="hole-meta">
+            <span class="status-chip">Live</span>
+            <a href="https://example.com" class="hole-link" target="_blank" rel="noopener">Visit site →</a>
+          </div>
+        </div>
+
+        <div class="hole">
+          <div class="hole-num">02</div>
+          <div class="hole-body">
+            <h3>[Site Two Name]</h3>
+            <p>[One or two sentences describing this site and its purpose.]</p>
+          </div>
+          <div class="hole-meta">
+            <span class="status-chip">Live</span>
+            <a href="https://example.com" class="hole-link" target="_blank" rel="noopener">Visit site →</a>
+          </div>
+        </div>
+
+        <div class="hole">
+          <div class="hole-num">03</div>
+          <div class="hole-body">
+            <h3>[Site Three Name]</h3>
+            <p>[One or two sentences describing this site and its purpose.]</p>
+          </div>
+          <div class="hole-meta">
+            <span class="status-chip">Live</span>
+            <a href="https://example.com" class="hole-link" target="_blank" rel="noopener">Visit site →</a>
+          </div>
+        </div>
+
+        <div class="hole">
+          <div class="hole-num">04</div>
+          <div class="hole-body">
+            <h3>[AI Phone Assistant Name]</h3>
+            <p>[Describe what callers experience — what the assistant handles, what number or link reaches it.]</p>
+          </div>
+          <div class="hole-meta">
+            <span class="status-chip">Live</span>
+            <a href="https://example.com" class="hole-link" target="_blank" rel="noopener">Visit site →</a>
+          </div>
+        </div>
+        <!-- END EDIT ME -->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>Built to be used, not just launched.</h2>
+      <p>[Replace with a couple of sentences on what RightOnPar LLC stands for — the kind of problems you solve, the standard you hold your products to, or why the name fits.]</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-block" style="padding: 80px 0;">
+      <h2>Want to work with us?</h2>
+      <p>Reach out and we'll get back to you. Replace this with your real contact details, a form, or a mailto link.</p>
+      <div class="contact-actions">
+        <a href="mailto:hello@rightonpar.com" class="btn btn-primary">hello@rightonpar.com</a>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> RightOnPar LLC</span>
+        <span>Built with HTML, CSS, and a little restraint.</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
