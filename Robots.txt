@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rightonpar.com/sitemap.xml
+Sitemap: https://www.getrightonpar.com/sitemap.xml
