@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | RightOnPar LLC</title>
+<meta name="description" content="RightOnPar LLC is a veteran-owned software and web development company. We build precision-crafted web apps and digital tools engineered for real business results.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.getrightonpar.com/about.html">
+<meta property="og:title" content="About | RightOnPar LLC">
+<meta property="og:description" content="RightOnPar LLC is a veteran-owned software and web development company building precision-crafted digital solutions.">
+<meta property="og:url" content="https://www.getrightonpar.com/about.html">
+<meta property="og:image" content="https://www.getrightonpar.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .about-body {
+    padding: 20px 0 80px;
+  }
+  .about-body p {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 16px;
+  }
+  .value-card {
+    padding: 28px 24px;
+    border: 1px solid rgba(26,27,22,0.12);
+    background: var(--white);
+  }
+  .value-card .icon {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--sand);
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .value-card h3 {
+    font-family: var(--display);
+    font-size: 1.2rem;
+    color: var(--fairway-deep);
+    margin-bottom: 8px;
+  }
+  .value-card p {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">RIGHT<span>ON</span>PAR</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Who we are</p>
+      <h1>Built on <em>discipline.</em> Delivered with integrity.</h1>
+      <p>RightOnPar LLC is a veteran-owned software and web development company. We build things the right way — every time.</p>
+    </div>
+  </section>
+
+  <section class="about-body">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Our story</h2>
+      </div>
+      <p>RightOnPar LLC delivers precision-crafted software, web applications, and digital solutions with the discipline, integrity, and attention to detail you'd expect from a veteran-owned company. We don't just build websites — we engineer dependable solutions that are right on par with your business goals.</p>
+      <p>The name says it all. In golf, being "right on par" means performing exactly as expected — no excuses, no shortcuts. That's the standard we hold every project to. Whether it's a consumer-facing web app, an AI-powered tool, or a full e-commerce build, we approach it with the same rigor we brought to our military service.</p>
+      <p>We're a small, focused team — which means every client gets real attention, real communication, and work that we're proud to put our name on.</p>
+
+      <div class="section-head" style="margin-top: 60px;">
+        <h2>What we stand for</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="icon">// PRECISION</span>
+          <h3>Built to spec</h3>
+          <p>We build exactly what you ask for — and we ask the right questions to make sure we understand it before we start.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">// INTEGRITY</span>
+          <h3>No shortcuts</h3>
+          <p>We don't cut corners to hit a deadline. If something isn't right, we fix it before it leaves our hands.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">// DISCIPLINE</span>
+          <h3>Consistent standards</h3>
+          <p>Every project — large or small — goes through the same rigorous design, development, testing, and audit process.</p>
+        </div>
+        <div class="value-card">
+          <span class="icon">// SERVICE</span>
+          <h3>Client first</h3>
+          <p>We work with you, not just for you. Your vision drives every decision from discovery to launch.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 60px;">
+        <a href="contact.html" class="btn btn-primary">Work with us</a>
+      </div>
+
+      <div class="foot-bottom">
+        <span>© <span class="year"></span> RightOnPar LLC</span>
+        <span>Veteran-Owned · getrightonpar.com</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+</body>
+</html>
